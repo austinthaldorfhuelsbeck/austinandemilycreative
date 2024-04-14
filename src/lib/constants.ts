@@ -18,7 +18,7 @@ export const heroImages = [
 
 export const howItWorksContent = [
   {
-    title: "Reach out to us on our site",
+    title: "Reach out to us",
     href: "/contact",
     description:
       "Reach out via our contact page. Make sure to give us as much info about your big day as you can.",

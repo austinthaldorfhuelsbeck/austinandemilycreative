@@ -1,9 +1,11 @@
+import { Button } from "@/components/ui/button";
 import { howItWorksContent } from "@/lib/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HowItWorks() {
   return (
-    <section className="w-full bg-secondary text-secondary-foreground flex flex-col items-center justify-between">
+    <section className="w-full bg-secondary text-secondary-foreground flex flex-col items-center justify-between pb-7">
       <div className="relative -top-[88px] flex w-full items-end">
         <div className="border border-t-1 border-b-0 flex-1 border-x-0 border-secondary-foreground mr-7" />
         <Image
@@ -42,6 +44,10 @@ export function HowItWorks() {
           </li>
         ))}
       </ul>
+
+      <Link href="/contact">
+        <Button variant="outline">Reach out today</Button>
+      </Link>
     </section>
   );
 }
