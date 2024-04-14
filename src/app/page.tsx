@@ -1,12 +1,120 @@
-import { Button } from "@/ui/button";
-
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center gap-2 h-full">
-      <Button>Default</Button>
-      <Button variant="outline">Outline</Button>
-      <Button variant="ghost">Ghost</Button>
-      <Button variant="link">Link</Button>
+    <main className="flex flex-col gap-2">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, minima
+        sapiente nulla quod sed animi! Facere magni quos quibusdam quam, aliquam
+        quae pariatur ipsa obcaecati itaque alias repudiandae expedita! Eius!
+      </p>
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Gilda_Display } from "next/font/google";
+import { Navigation } from "./_components/navigation";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={gildaDisplay.className}>{children}</body>
+      <body className={gildaDisplay.className}>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
