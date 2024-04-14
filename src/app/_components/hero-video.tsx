@@ -1,11 +1,10 @@
 "use client";
 
+import { heroVideoUrl } from "@/lib/constants";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
 export function HeroVideo() {
-  const url = "https://vimeo.com/741725969";
-
   const [hasWindow, setHasWindow] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -18,7 +17,7 @@ export function HeroVideo() {
       <div className="aspect-video max-w-[1255px] mx-auto -top-5 relative">
         {hasWindow && (
           <ReactPlayer
-            url={url}
+            url={heroVideoUrl}
             width="100%"
             height="100%"
             playing
@@ -27,7 +26,7 @@ export function HeroVideo() {
             controls
           />
         )}
-        <source src={url} type="video/mp4" />
+        <source src={heroVideoUrl} type="video/mp4" />
       </div>
     </section>
   );

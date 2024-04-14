@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Gilda_Display } from "next/font/google";
+import { Footer } from "./_components/footer";
 import { Navigation } from "./_components/navigation";
 import "./globals.css";
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={gildaDisplay.className}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

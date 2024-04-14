@@ -43,3 +43,38 @@ export const howItWorksContent = [
     imgUrl: moonPhase4,
   },
 ];
+
+export const testimonialsContent = [
+  {
+    name: "Emily + Chris",
+    quote:
+      "Austin and Emily made our wedding planning process and wedding day so special! They were incredibly responsive and easy to work with through the whole planning process. They sent us some great recommendations and even connected us with the photographer we ended up hiring (who was also amazing). Having them film our wedding was like getting to hang out with our friends all day, even though that was the first time we met in person. They are so kind and fun, we genuinely enjoyed having them by our side! We are absolutely obsessed with our video, it’s beautiful and they did an amazing job at highlighting the very best parts of our day. I’m SO glad we worked with them and have their amazing video to remember our wedding by!",
+  },
+  {
+    name: "Alyssa + Alex",
+    quote:
+      "We had to change videographers during our wedding journey so I was STRESSED! But I came across austin & Emily creative on Instagram and watched their videos. Their videos were storytelling and cinematic. Austin & Emily were so personable from the get go. From our initial zoom interview I knew I could trust them with our special day! They captured the entire day so perfectly and that’s with 3 locations (hotel, venue, studio). My needs were that I wanted my video to reflect the emotion of the day, the PARTY, but also showcase my hard work in the wedding design. This feature film was truly that. Thank you so much Austin & Emily!",
+  },
+  {
+    name: "Bianca + Dylan",
+    quote:
+      "Having Austin & Emily in our wedding was the best decision we made. They captured the most important thing, the love radiating from our smiles! Sounds cheesy, but thats what me and Dylan felt the whole time we’re watching our video <3 Kudos to this couple who made everything possible! Will definitely recommend them :)",
+  },
+  {
+    name: "Megan + Anand",
+    quote:
+      "Austin and Emily - WOW!!! We finally had a chance to watch these beautiful videos with our family over the holidays and want to say THANK YOU for your beautiful footage and amazing attention to detail. We are in love with the footage and the compilation and so happy to work with you as people. Thank you for going above and beyond across our three events, and coming to SJI with us <3",
+  },
+  {
+    name: "Rachael + Michael",
+    quote:
+      "Just wanted you guys to know we watched this again today and just cried and cried. We are simply astonished at your gifting and so grateful for how you captured our day and our story. Brilliant, beautiful work.",
+  },
+  {
+    name: "Lauren + Trevor",
+    quote:
+      "It was so lovely to work with Austin and Emily for our August 2022 wedding. From the start of working with them they were responsive and helpful. They made us feel comfortable in front of the camera, were fun to be around, and captured everything so beautifully!",
+  },
+];
+
+export const heroVideoUrl = "https://vimeo.com/741725969";
