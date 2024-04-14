@@ -62,6 +62,9 @@ const config = {
       fontSize: {
         "2xs": "0.65rem",
       },
+      transitionDuration: {
+        2000: "2000ms",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
