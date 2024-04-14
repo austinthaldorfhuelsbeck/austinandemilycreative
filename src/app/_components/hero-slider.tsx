@@ -18,7 +18,10 @@ export function HeroSlider() {
   }, []);
 
   return (
-    <header>
+    <header
+      style={{ height: "calc(100vh - 48px)", filter: "brightness(70%)" }}
+      className="bg-darkBackground"
+    >
       {heroImages.map((_, idx) => (
         <Image
           key={idx}
@@ -27,7 +30,7 @@ export function HeroSlider() {
           height={900}
           alt="Austin + Emily Creative"
           className={cn(
-            "object-cover w-full h-full absolute transition-all duration-2000 ease-in-out ",
+            "object-cover w-full h-full absolute transition-opacity duration-2000 ease-in-out ",
             idx === currentSlide ? "opacity-100" : "opacity-0"
           )}
           style={{ height: "calc(100vh - 48px)", filter: "brightness(70%)" }}

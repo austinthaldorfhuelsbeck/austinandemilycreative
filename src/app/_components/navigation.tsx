@@ -46,7 +46,7 @@ function MobileDropdown() {
 
 export function Navigation() {
   return (
-    <nav className="flex justify-between items-center bg-darkBackground text-primary sticky top-0 px-3">
+    <nav className="flex justify-between items-center bg-darkBackground text-primary sticky top-0 px-3 z-50">
       <header className="flex gap-3 items-center">
         <Image
           src="/assets/cream-stars.png"
