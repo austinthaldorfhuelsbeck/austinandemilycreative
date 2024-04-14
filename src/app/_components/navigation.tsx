@@ -17,22 +17,26 @@ const links = [
   { href: "/contact", label: "Contact" },
 ];
 
-export function MobileDropdown() {
+function NavigationLink({ href, label }: { href: string; label: string }) {
+  return (
+    <Link href={href}>
+      <Button variant="link" className="px-1">
+        <span className="text-2xs uppercase tracking-widest">{label}</span>
+      </Button>
+    </Link>
+  );
+}
+
+function MobileDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="py-2 flex items-center">
-        <MenuIcon size={28} />
+        <MenuIcon size={36} />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-darkBackground">
         {links.map(({ href, label }) => (
           <DropdownMenuItem key={`${href}${label}`}>
-            <Link href={href}>
-              <Button variant="link" className="w-full">
-                <span className="text-2xs uppercase tracking-widest">
-                  {label}
-                </span>
-              </Button>
-            </Link>
+            <NavigationLink href={href} label={label} />
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
@@ -46,26 +50,20 @@ export function Navigation() {
       <header className="flex gap-3 items-center">
         <Image
           src="/assets/cream-stars.png"
-          width={20}
-          height={20}
+          width={60}
+          height={60}
           alt="Sparkles"
-          className="object-contain"
+          className="object-contain h-full w-auto my-3 md:h-6 md:w-6"
         />
         <Link href="/">
-          <h1 className="text-2xl">Austin + Emily Creative</h1>
+          <h1 className="text-3xl md:text-2xl">Austin + Emily Creative</h1>
         </Link>
       </header>
 
       <ul className="gap-2 hidden md:flex">
         {links.map(({ href, label }) => (
           <li key={`${href}${label}`}>
-            <Link href={href}>
-              <Button variant="link" className="px-1">
-                <span className="text-2xs uppercase tracking-widest">
-                  {label}
-                </span>
-              </Button>
-            </Link>
+            <NavigationLink href={href} label={label} />
           </li>
         ))}
       </ul>
