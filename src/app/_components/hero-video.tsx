@@ -14,19 +14,21 @@ export function HeroVideo() {
   }, []);
 
   return (
-    <section className="w-full aspect-video">
-      {hasWindow && (
-        <ReactPlayer
-          url={url}
-          width="100%"
-          height="100%"
-          playing
-          loop
-          muted
-          controls
-        />
-      )}
-      <source src={url} type="video/mp4" />
+    <section className="w-full bg-secondary">
+      <div className="aspect-video max-w-[1255px] mx-auto -top-5 relative">
+        {hasWindow && (
+          <ReactPlayer
+            url={url}
+            width="100%"
+            height="100%"
+            playing
+            loop
+            muted
+            controls
+          />
+        )}
+        <source src={url} type="video/mp4" />
+      </div>
     </section>
   );
 }

@@ -4,7 +4,7 @@ const copy = ["Weddings", "Proposals", "Elopements"];
 
 export function WhoWeAre() {
   return (
-    <section className="bg-darkBackground text-accent">
+    <section className="bg-darkBackground text-accent pb-5">
       <div className="max-w-6xl py-8 px-2 flex items-center flex-col gap-5 md:flex-row justify-between mx-auto">
         <aside className="m-5">
           <h2 className="text-5xl lg:text-6xl text-center">
