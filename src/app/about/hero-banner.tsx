@@ -10,6 +10,8 @@ export function HeroBanner() {
             src="/images/emily-austin-vows.jpg"
             alt="Emily reading her vows to Austin at their elopement on the Washington coast."
             quality={100}
+            width={463}
+            height={536}
             className="object-cover w-[463px] h-[536px] border border-accent"
           />
           <p className="mt-5 text-lg italic">

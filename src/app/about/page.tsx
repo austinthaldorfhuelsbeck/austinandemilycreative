@@ -1,4 +1,4 @@
-import { CTA } from "./cta";
+import { CTA } from "../_components/cta";
 import { CurrentlyInto } from "./currently-into";
 import { HeroBanner } from "./hero-banner";
 import { ThisOrThat } from "./this-or-that";

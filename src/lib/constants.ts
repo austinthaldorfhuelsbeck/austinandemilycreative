@@ -6,11 +6,14 @@ import moonPhase1 from "../../public/assets/moon-phases-1.png";
 import moonPhase2 from "../../public/assets/moon-phases-2.png";
 import moonPhase3 from "../../public/assets/moon-phases-3.png";
 import moonPhase4 from "../../public/assets/moon-phases-4.png";
+import emiKelsey from "../../public/images/emi-kelsey.jpg";
 import heroSlider1 from "../../public/images/hero-slider-1.jpg";
 import heroSlider2 from "../../public/images/hero-slider-2.jpg";
 import heroSlider3 from "../../public/images/hero-slider-3.jpg";
 import heroSlider4 from "../../public/images/hero-slider-4.jpg";
 import heroSlider5 from "../../public/images/hero-slider-5.jpg";
+import maiAndBridesmaids from "../../public/images/mai-and-bridesmaids.gif";
+import rina from "../../public/images/rina.jpg";
 
 export const heroImages = [
   heroSlider1,
@@ -227,4 +230,69 @@ export const featuredFilmContent = {
   description:
     "An intimate evening in Snoqualmie, WA. Lauren and Andrew's guests danced the night away surrounded by breathtaking views of Mount Si and accompanied by a musical performance from the groom dedicated to his new bride.",
   href: "#lauren-andrew",
+};
+
+export const investmentContent = [
+  {
+    title: "Short Film",
+    description:
+      "Best for smaller single-location weddings without many events or multiple ceremonies.",
+    price: "$3,450",
+    includes: [
+      "1 Cinematographer",
+      "6 hours of coverage",
+      "4-6 minute highlight film",
+      "Full ceremony + toast edits",
+      "Sneak peek",
+      "Digital Delivery",
+    ],
+    src: rina,
+  },
+  {
+    title: "Feature Film",
+    description:
+      "Our most popular package. This is perfect for a traditional wedding, or one with multiple locations and ceremonies.",
+    price: "$4,200",
+    includes: [
+      "2 Cinematographers",
+      "8 hours of coverage",
+      "7-10 minute highlight film",
+      "Full ceremony + toast edits",
+      "Social media trailers + sneak peek",
+      "Digital Delivery",
+    ],
+    src: emiKelsey,
+  },
+  {
+    title: "Cinematic Feature",
+    description:
+      "The works! Full coverage of the day and multiple final edits. Best for couples who want as much footage as possible, or have several ceremonies or multiple locations.",
+    price: "$5,450",
+    includes: [
+      "2 Cinematographers",
+      "8 hours of coverage",
+      "7-10 minute highlight film",
+      "Full ceremony + toast edits",
+      "Documentary + FOMO edits",
+      "Social media trailers + sneak peek",
+      "Digital Delivery",
+    ],
+    src: maiAndBridesmaids,
+  },
+];
+
+export const elopementContent = {
+  title: "Elopements + destination weddings",
+  subtitle: "Elopements + Destination",
+  description:
+    "Each of our elopement and destination packages are custom designed to your needs. Set up a time to chat with us, so we can learn what makes your big day tick!",
+  includes: [
+    "1+ cinematographers (as many as needed)",
+    "As many hours or days as needed",
+    "Highlight catered to your day",
+    "Sneak peek",
+    "Any add-ons or special orders",
+    "Digital Delivery",
+  ],
+  footer: "Custom pricing",
 };
