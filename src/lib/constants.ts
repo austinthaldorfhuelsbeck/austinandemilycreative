@@ -188,3 +188,31 @@ export const currentlyInto = [
     description: "Baldur's Gate 3",
   },
 ];
+
+export const filmsContent = [
+  {
+    coupleName: "Alyssa + Alex",
+    filmType: "Feature Film",
+    src: "https://vimeo.com/817607905",
+  },
+  {
+    coupleName: "Daniyah + Sameer",
+    filmType: "Trailer",
+    src: "https://vimeo.com/867375192",
+  },
+  {
+    coupleName: "Lauren + Andrew",
+    filmType: "Feature Film",
+    src: "https://vimeo.com/867375325",
+  },
+  {
+    coupleName: "Naomi + Michel",
+    filmType: "Feature Film",
+    src: "https://vimeo.com/817843152",
+  },
+  {
+    coupleName: "Emily + Chris",
+    filmType: "Short Film",
+    src: "https://vimeo.com/817825759",
+  },
+];
