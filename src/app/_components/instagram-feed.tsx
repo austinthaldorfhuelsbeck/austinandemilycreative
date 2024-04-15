@@ -10,7 +10,7 @@ export async function InstagramFeed() {
     .map((post: { url: string }) => post.url);
 
   return (
-    <section>
+    <section className="mx-auto">
       <ul className="grid grid-cols-2 sm:grid-cols-4 gap-5 p-7 max-w-md sm:max-w-5xl mx-auto">
         {recentPostImages.map((url, idx) => (
           <Image

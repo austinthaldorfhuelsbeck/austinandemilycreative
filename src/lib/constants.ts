@@ -169,3 +169,22 @@ export const thisOrThatContent = {
     },
   ],
 };
+
+export const currentlyInto = [
+  {
+    title: "Watching",
+    description: "The Rings of Power",
+  },
+  {
+    title: "Listening",
+    description: "Caroline Polachek + Japanese Breakfast",
+  },
+  {
+    title: "Reading",
+    description: "Caitlin R. Kiernan",
+  },
+  {
+    title: "Playing",
+    description: "Baldur's Gate 3",
+  },
+];

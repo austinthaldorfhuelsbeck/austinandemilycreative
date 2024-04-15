@@ -6,7 +6,7 @@ import { InstagramFeed } from "./instagram-feed";
 
 function FooterNav() {
   return (
-    <nav className="mx-auto">
+    <nav className="">
       <ul className="grid grid-cols-3 sm:grid-cols-2 max-w-64 gap-x-5">
         {navigationLinks.map(({ href, label }, idx) => (
           <Link
@@ -46,7 +46,7 @@ function SocialLinks() {
 
 export function Footer() {
   return (
-    <footer className="bg-darkBackground">
+    <footer className="bg-popover">
       <Image
         src="/images/footer-hero-background.jpg"
         alt="Footer hero background"

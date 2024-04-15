@@ -19,7 +19,7 @@ export function HeroSlider() {
 
   return (
     <header
-      style={{ height: "calc(100vh - 48px)", filter: "brightness(70%)" }}
+      style={{ height: "calc(100vh - 48px)" }}
       className="bg-darkBackground"
     >
       {heroImages.map((_, idx) => (
@@ -30,19 +30,20 @@ export function HeroSlider() {
           height={900}
           alt="Austin + Emily Creative"
           className={cn(
-            "object-cover w-full h-full absolute transition-opacity duration-2000 ease-in-out ",
+            "object-cover w-full h-full absolute transition-opacity duration-2000 ease-in-out",
             idx === currentSlide ? "opacity-100" : "opacity-0"
           )}
           style={{ height: "calc(100vh - 48px)", filter: "brightness(70%)" }}
         />
       ))}
+
       <aside className="absolute bottom-0 text-primary mx-10 my-14 italic flex flex-col gap-2">
         <h1 className="text-6xl md:text-8xl">LOVE Stories</h1>
         <div className="flex gap-2 items-center w-full">
           <Image src="/assets/one-star.png" width={25} height={25} alt="Star" />
           <div className="h-1 flex-1 border-t border-primary" />
-          <p className="font-bold tracking-wider flex-1">
-            crafted by you, captured by us
+          <p className="font-bold tracking-wider flex-1 lowercase">
+            Crafted by you, captured by us
           </p>
         </div>
       </aside>

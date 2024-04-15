@@ -16,7 +16,7 @@ function SelectedIndicator({
     transform: `rotate(${Math.random() * 10 - 5}deg)`,
   };
   const randomTranslate = {
-    transform: `translate(${Math.random() * 10 - 20}px, ${
+    transform: `translate(${Math.random() * 10 - 30}px, ${
       Math.random() * 10 - 5
     }px)`,
   };
