@@ -192,27 +192,39 @@ export const currentlyInto = [
 export const filmsContent = [
   {
     coupleName: "Alyssa + Alex",
+    id: "alyssa-alex",
     filmType: "Feature Film",
     src: "https://vimeo.com/817607905",
   },
   {
     coupleName: "Daniyah + Sameer",
+    id: "daniyah-sameer",
     filmType: "Trailer",
     src: "https://vimeo.com/867375192",
   },
   {
     coupleName: "Lauren + Andrew",
+    id: "lauren-andrew",
     filmType: "Feature Film",
     src: "https://vimeo.com/867375325",
   },
   {
     coupleName: "Naomi + Michel",
+    id: "naomi-michel",
     filmType: "Feature Film",
     src: "https://vimeo.com/817843152",
   },
   {
     coupleName: "Emily + Chris",
+    id: "emily-chris",
     filmType: "Short Film",
     src: "https://vimeo.com/817825759",
   },
 ];
+
+export const featuredFilmContent = {
+  coupleName: "Lauren + Andrew",
+  description:
+    "An intimate evening in Snoqualmie, WA. Lauren and Andrew's guests danced the night away surrounded by breathtaking views of Mount Si and accompanied by a musical performance from the groom dedicated to his new bride.",
+  href: "#lauren-andrew",
+};
