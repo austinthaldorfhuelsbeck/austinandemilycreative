@@ -101,3 +101,24 @@ export const featuredIn = [
     alt: "Vogue Italia",
   },
 ];
+
+export const socialLinks = [
+  {
+    href: "https://www.instagram.com/austinandemilycreative",
+    src: "/assets/brands/instagram.svg",
+    alt: "Instagram",
+  },
+  {
+    href: "https://www.tiktok.com/@austinandemilycreative",
+    src: "/assets/brands/tiktok.svg",
+    alt: "TikTok",
+  },
+];
+
+export const navigationLinks = [
+  { href: "/", label: "Home" },
+  { href: "/contact", label: "Contact" },
+  { href: "/about", label: "About" },
+  { href: "/films", label: "Love Stories" },
+  { href: "/investment", label: "Investment" },
+];

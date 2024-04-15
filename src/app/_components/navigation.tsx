@@ -5,17 +5,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { navigationLinks } from "@/lib/constants";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/films", label: "Love Stories" },
-  { href: "/investment", label: "Investment" },
-  { href: "/contact", label: "Contact" },
-];
 
 function NavigationLink({ href, label }: { href: string; label: string }) {
   return (
@@ -34,7 +27,7 @@ function MobileDropdown() {
         <MenuIcon size={36} />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-darkBackground">
-        {links.map(({ href, label }) => (
+        {navigationLinks.map(({ href, label }) => (
           <DropdownMenuItem key={`${href}${label}`}>
             <NavigationLink href={href} label={label} />
           </DropdownMenuItem>
@@ -61,7 +54,7 @@ export function Navigation() {
       </header>
 
       <ul className="gap-2 hidden md:flex">
-        {links.map(({ href, label }) => (
+        {navigationLinks.map(({ href, label }) => (
           <li key={`${href}${label}`}>
             <NavigationLink href={href} label={label} />
           </li>
