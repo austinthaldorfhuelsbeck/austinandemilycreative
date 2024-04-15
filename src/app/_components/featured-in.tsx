@@ -1,7 +1,25 @@
+import { featuredIn } from "@/lib/constants";
+import Image from "next/image";
+
 export function FeaturedIn() {
   return (
-    <section className="flex flex-col items-center justify-center py-24 bg-primary aspect-video w-full">
-      <h2 className="text-3xl font-bold text-foreground">Featured in</h2>
+    <section className="py-12 bg-primary">
+      <h2 className="font-extralight text-foreground text-center uppercase tracking-wider mb-6">
+        Featured in
+      </h2>
+
+      <ul className="grid grid-cols-2 md:grid-cols-4 items-center gap-5">
+        {featuredIn.map((publication, idx) => (
+          <Image
+            key={idx}
+            src={publication.src}
+            alt={publication.alt}
+            width={80}
+            height={80}
+            className="mx-auto"
+          />
+        ))}
+      </ul>
     </section>
   );
 }

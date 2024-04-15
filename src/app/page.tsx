@@ -5,7 +5,7 @@ import { HowItWorks } from "./_components/how-it-works";
 import { Testimonials } from "./_components/testimonials";
 import { WhoWeAre } from "./_components/who-we-are";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="flex flex-col">
       <HeroSlider />

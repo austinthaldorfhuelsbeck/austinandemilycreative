@@ -1,3 +1,7 @@
+import junebug from "../../public/assets/brands/junebug.png";
+import theKnot from "../../public/assets/brands/the-knot.png";
+import vogueItalia from "../../public/assets/brands/vogue-italia.png";
+import zola from "../../public/assets/brands/zola.png";
 import moonPhase1 from "../../public/assets/moon-phases-1.png";
 import moonPhase2 from "../../public/assets/moon-phases-2.png";
 import moonPhase3 from "../../public/assets/moon-phases-3.png";
@@ -78,3 +82,22 @@ export const testimonialsContent = [
 ];
 
 export const heroVideoUrl = "https://vimeo.com/741725969";
+
+export const featuredIn = [
+  {
+    src: junebug,
+    alt: "Junebug Weddings",
+  },
+  {
+    src: theKnot,
+    alt: "The Knot",
+  },
+  {
+    src: zola,
+    alt: "Zola",
+  },
+  {
+    src: vogueItalia,
+    alt: "Vogue Italia",
+  },
+];
