@@ -26,8 +26,7 @@ export function HeroSlider() {
         <Image
           key={idx}
           src={heroImages[idx]}
-          width={1600}
-          height={900}
+          quality={100}
           alt="Austin + Emily Creative"
           className={cn(
             "object-cover w-full h-full absolute transition-opacity duration-2000 ease-in-out",
