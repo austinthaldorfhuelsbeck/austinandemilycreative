@@ -1,4 +1,5 @@
-import { CurrentlyInto } from "../_components/currently-into";
+import { CTA } from "./cta";
+import { CurrentlyInto } from "./currently-into";
 import { HeroBanner } from "./hero-banner";
 import { ThisOrThat } from "./this-or-that";
 
@@ -8,6 +9,7 @@ export default function AboutPage() {
       <HeroBanner />
       <ThisOrThat />
       <CurrentlyInto />
+      <CTA />
     </main>
   );
 }
