@@ -122,3 +122,50 @@ export const navigationLinks = [
   { href: "/films", label: "Love Stories" },
   { href: "/investment", label: "Investment" },
 ];
+
+export const thisOrThatContent = {
+  this: [
+    {
+      text: "Going out",
+      austinSelected: true,
+      emilySelected: true,
+    },
+    {
+      text: "Outdoors",
+      austinSelected: true,
+      emilySelected: true,
+    },
+    {
+      text: "Coffee",
+      austinSelected: true,
+    },
+    {
+      text: "Sunrises",
+    },
+    {
+      text: "Dancing",
+      emilySelected: true,
+    },
+  ],
+  that: [
+    {
+      text: "Staying in",
+    },
+    {
+      text: "City life",
+    },
+    {
+      text: "Tea",
+      emilySelected: true,
+    },
+    {
+      text: "Sunsets",
+      austinSelected: true,
+      emilySelected: true,
+    },
+    {
+      text: "Rocking out",
+      austinSelected: true,
+    },
+  ],
+};
