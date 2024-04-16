@@ -7,12 +7,16 @@ import moonPhase2 from "../../public/assets/moon-phases-2.png";
 import moonPhase3 from "../../public/assets/moon-phases-3.png";
 import moonPhase4 from "../../public/assets/moon-phases-4.png";
 import emiKelsey from "../../public/images/emi-kelsey.jpg";
+import emilyChris from "../../public/images/emily-chris.jpg";
 import heroSlider1 from "../../public/images/hero-slider-1.jpg";
 import heroSlider2 from "../../public/images/hero-slider-2.jpg";
 import heroSlider3 from "../../public/images/hero-slider-3.jpg";
 import heroSlider4 from "../../public/images/hero-slider-4.jpg";
 import heroSlider5 from "../../public/images/hero-slider-5.jpg";
+import jessicaJared from "../../public/images/jessica-jared.jpg";
+import keneshaDillon from "../../public/images/kenesha-dillon.jpg";
 import maiAndBridesmaids from "../../public/images/mai-and-bridesmaids.gif";
+import mariahChester from "../../public/images/mariah-chester.jpg";
 import rina from "../../public/images/rina.jpg";
 
 export const heroImages = [
@@ -296,3 +300,26 @@ export const elopementContent = {
   ],
   footer: "Custom pricing",
 };
+
+export const recentPostImages = [
+  {
+    src: emilyChris,
+    alt: "Emily + Chris",
+    href: "https://www.instagram.com/reel/CkWzEPgIabA/",
+  },
+  {
+    src: keneshaDillon,
+    alt: "Kenesha + Dillon",
+    href: "https://www.instagram.com/reel/CkWyLDQoAIC/",
+  },
+  {
+    src: mariahChester,
+    alt: "Mariah + Chester",
+    href: "https://www.instagram.com/reel/CkWt_vNIE6-/",
+  },
+  {
+    src: jessicaJared,
+    alt: "Jessica + Jared",
+    href: "https://www.instagram.com/reel/CkRDsltporB/",
+  },
+];
