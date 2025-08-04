@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { testimonialsContent } from "@/lib/constants";
-import { QuoteIcon } from "lucide-react";
-import Image from "next/image";
-import cassandraWithBridesmaids from "../../../public/images/cassandra-with-bridesmaids.jpg";
+} from '@/components/ui/carousel';
+import { testimonialsContent } from '@/lib/constants';
+import { QuoteIcon } from 'lucide-react';
+import Image from 'next/image';
+import cassandraWithBridesmaids from '@/public/images/cassandra-with-bridesmaids.jpg';
 
 export function Testimonials() {
   return (

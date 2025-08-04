@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+import { format } from 'date-fns';
+import { CalendarIcon } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
+import { Button } from '@/components/ui/button';
+import { Calendar } from '@/components/ui/calendar';
 import {
   Form,
   FormControl,
@@ -14,70 +14,62 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from '@/components/ui/popover';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/components/ui/use-toast";
-import { cn } from "@/lib/utils";
-import { zodResolver } from "@hookform/resolvers/zod";
+} from '@/components/ui/select';
+import { Textarea } from '@/components/ui/textarea';
+import { toast } from '@/components/ui/use-toast';
+import { cn } from '@/lib/utils';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 const referralOptions = [
-  { value: "google", label: "Google" },
-  { value: "friend", label: "Friend" },
-  { value: "social", label: "Social Media" },
-  { value: "event", label: "Event" },
-  { value: "database", label: "Wedding Database" },
-  { value: "other", label: "Other" },
+  { value: 'google', label: 'Google' },
+  { value: 'friend', label: 'Friend' },
+  { value: 'social', label: 'Social Media' },
+  { value: 'event', label: 'Event' },
+  { value: 'database', label: 'Wedding Database' },
+  { value: 'other', label: 'Other' },
 ];
 
 const formSchema = z.object({
   name: z
     .string()
     .min(2, {
-      message: "Name is required",
+      message: 'Name is required',
     })
     .max(64, {
-      message: "Name is too long",
+      message: 'Name is too long',
     }),
   partnerName: z
     .string()
     .min(2, {
-      message: "Partner name is required",
+      message: 'Partner name is required',
     })
     .max(64, {
-      message: "Partner name is too long",
+      message: 'Partner name is too long',
     }),
   email: z.string().email(),
-  phone: z
-    .string()
-    .min(10, {
-      message: "Invalid phone number",
-    })
-    .max(15, {
-      message: "Invalid phone number",
-    })
-    .optional(),
+  phone: z.string().optional(),
   weddingDate: z.date().optional(),
   referral: z.string().optional(),
   message: z
     .string()
     .min(10, {
-      message: "Message is required",
+      message: 'Message is required',
     })
     .max(500, {
-      message: "Message is too long",
+      message: 'Message is too long',
     }),
 });
 
@@ -85,21 +77,47 @@ export function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
-      partnerName: "",
-      email: "",
-      phone: "",
+      name: '',
+      partnerName: '',
+      email: '',
+      phone: '',
       weddingDate: new Date(),
-      referral: "",
-      message: "",
+      referral: '',
+      message: '',
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    toast({
-      title: `Thanks, ${values.name.split(" ")[0]}!`,
-      description: "Austin + Emily will be in touch with you soon.",
-    });
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...values,
+          weddingDate: values.weddingDate?.toISOString(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      toast({
+        title: `Thanks, ${values.name.split(' ')[0]}!`,
+        description: 'Austin + Emily will be in touch with you soon.',
+      });
+
+      form.reset();
+    } catch (error) {
+      console.error('Contact form error:', error);
+      toast({
+        title: 'Something went wrong',
+        description: 'Please try again or contact us directly.',
+        variant: 'destructive',
+      });
+    }
   }
 
   return (
@@ -170,14 +188,14 @@ export function ContactForm() {
                 <PopoverTrigger asChild>
                   <FormControl>
                     <Button
-                      variant={"outline"}
+                      variant={'outline'}
                       className={cn(
-                        "pl-3 text-left font-normal bg-darkBackground/50",
-                        !field.value && "text-muted-foreground"
+                        'pl-3 text-left font-normal bg-darkBackground/50',
+                        !field.value && 'text-muted-foreground'
                       )}
                     >
                       {field.value ? (
-                        format(field.value, "PPP")
+                        format(field.value, 'PPP')
                       ) : (
                         <span>Pick a date</span>
                       )}
@@ -237,7 +255,7 @@ export function ContactForm() {
                   <FormMessage />
                   <span
                     className={
-                      field.value.length > 500 ? "text-destructive" : ""
+                      field.value.length > 500 ? 'text-destructive' : ''
                     }
                   >
                     {field.value.length}/500

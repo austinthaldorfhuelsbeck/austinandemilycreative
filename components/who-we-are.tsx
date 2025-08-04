@@ -1,6 +1,6 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-const copy = ["Weddings", "Proposals", "Elopements"];
+const copy = ['Weddings', 'Proposals', 'Elopements'];
 
 export function WhoWeAre() {
   return (
@@ -22,6 +22,7 @@ export function WhoWeAre() {
           height={900}
           alt="Emily and Austin on their wedding day, popping a bottle of champagne."
           className="object-cover w-[314px] h-[464px] rounded-full border p-5 border-accent"
+          unoptimized
         />
 
         <aside className="flex flex-col gap-5">
