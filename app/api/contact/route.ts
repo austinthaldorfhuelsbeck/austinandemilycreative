@@ -19,14 +19,15 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const validatedData = contactSchema.parse(body);
 
-    const { name, partnerName, email, phone, weddingDate, referral, message } = validatedData;
+    const { name, partnerName, email, phone, weddingDate, referral, message } =
+      validatedData;
 
     // Format wedding date if provided
-    const formattedWeddingDate = weddingDate 
-      ? new Date(weddingDate).toLocaleDateString('en-US', { 
-          year: 'numeric', 
-          month: 'long', 
-          day: 'numeric' 
+    const formattedWeddingDate = weddingDate
+      ? new Date(weddingDate).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
         })
       : 'Not specified';
 
@@ -39,12 +40,15 @@ export async function POST(request: NextRequest) {
       database: 'Wedding Database',
       other: 'Other',
     };
-    const formattedReferral = referral && referralMap[referral] ? referralMap[referral] : 'Not specified';
+    const formattedReferral =
+      referral && referralMap[referral]
+        ? referralMap[referral]
+        : 'Not specified';
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Austin & Emily Creative <noreply@resend.dev>',
-      to: [process.env.CONTACT_EMAIL || 'contact@example.com'],
+      from: 'Austin & Emily Creative Contact Form <notifications@thaldorfhuelsbeck.dev>',
+      to: [process.env.CONTACT_EMAIL || 'austin@austinandemilycreative.com'],
       subject: `New Wedding Inquiry from ${name} & ${partnerName}`,
       html: `
         <h2>New Wedding Inquiry</h2>
@@ -76,7 +80,7 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error('Contact form error:', error);
-    
+
     if (error instanceof z.ZodError) {
       return NextResponse.json(
         { error: 'Invalid form data', details: error.errors },
