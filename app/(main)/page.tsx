@@ -1,19 +1,20 @@
-import { FeaturedIn } from '@/components/featured-in';
-import { HeroSlider } from '@/components/hero-slider';
-import { HeroVideo } from '@/components/hero-video';
-import { HowItWorks } from '@/components/how-it-works';
-import { Testimonials } from '@/components/testimonials';
-import { WhoWeAre } from '@/components/who-we-are';
+import Blocks from '@/components/blocks';
+import { fetchSanityPageBySlug } from '@/sanity/lib/fetch';
+import { generatePageMetadata } from '@/sanity/lib/metadata';
+import MissingSanityPage from '@/components/missing-sanity-page';
 
-export default function HomePage() {
-  return (
-    <main className="flex flex-col">
-      <HeroSlider />
-      {/* <WhoWeAre />
-      <HeroVideo />
-      <HowItWorks />
-      <Testimonials />
-      <FeaturedIn /> */}
-    </main>
-  );
+export async function generateMetadata() {
+  const page = await fetchSanityPageBySlug({ slug: 'index' });
+
+  return generatePageMetadata({ page, slug: 'index' });
+}
+
+export default async function IndexPage() {
+  const page = await fetchSanityPageBySlug({ slug: 'index' });
+
+  if (!page) {
+    return MissingSanityPage({ document: 'page', slug: 'index' });
+  }
+
+  return <Blocks blocks={page?.blocks ?? []} />;
 }

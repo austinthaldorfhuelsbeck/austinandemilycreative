@@ -8,24 +8,11 @@ import moonPhase3 from '@/public/assets/moon-phases-3.png';
 import moonPhase4 from '@/public/assets/moon-phases-4.png';
 import emiKelsey from '@/public/images/emi-kelsey.jpg';
 import emilyChris from '@/public/images/emily-chris.jpg';
-import heroSlider1 from '@/public/images/hero-slider-1.jpg';
-import heroSlider2 from '@/public/images/hero-slider-2.jpg';
-import heroSlider3 from '@/public/images/hero-slider-3.jpg';
-import heroSlider4 from '@/public/images/hero-slider-4.jpg';
-import heroSlider5 from '@/public/images/hero-slider-5.jpg';
 import jessicaJared from '@/public/images/jessica-jared.jpg';
 import keneshaDillon from '@/public/images/kenesha-dillon.jpg';
 import maiAndBridesmaids from '@/public/images/mai-and-bridesmaids.gif';
 import mariahChester from '@/public/images/mariah-chester.jpg';
 import rina from '@/public/images/rina.jpg';
-
-export const heroImages = [
-  heroSlider1,
-  heroSlider2,
-  heroSlider3,
-  heroSlider4,
-  heroSlider5,
-];
 
 export const howItWorksContent = [
   {
