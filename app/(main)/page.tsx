@@ -9,11 +9,11 @@ export default function HomePage() {
   return (
     <main className="flex flex-col">
       <HeroSlider />
-      <WhoWeAre />
+      {/* <WhoWeAre />
       <HeroVideo />
       <HowItWorks />
       <Testimonials />
-      <FeaturedIn />
+      <FeaturedIn /> */}
     </main>
   );
 }
